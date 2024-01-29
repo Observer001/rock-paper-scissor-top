@@ -8,14 +8,15 @@ function playRound(playerSelection, computerSeletion) {
     playerSelection = playerSelection.toLowerCase();
     computerSeletion = computerSeletion.toLowerCase();
 
-    if(playerSelection == "rock" && computerSeletion == "paper")
-        return `You Lose! ${computerSeletion} beats ${playerSelection}`
-    else if(playerSelection == "paper" && computerSeletion == "scissor")
-        return `You Lose! ${computerSeletion} beats ${playerSelection}`
-    else if(playerSelection == "scissor" && computerSeletion == "rock")
-        return `You Lose! ${computerSeletion} beats ${playerSelection}`
-    else if(playerSelection == computerSeletion)
+    if(playerSelection == computerSeletion)
         return `Tie! Both have chosen ${playerSelection}`
+    else if(
+        (playerSelection == "rock" && computerSeletion == "paper") ||
+        (playerSelection == "paper" && computerSeletion == "scissor") ||
+        (playerSelection == "scissor" && computerSeletion == "rock")
+    )   {
+        return `You Lose! ${computerSeletion} beats ${playerSelection}`
+    }
     else
         return `You win! ${playerSelection} beats ${computerSeletion}`
 

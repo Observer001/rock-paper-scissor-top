@@ -1,2 +1,2 @@
 # rock-paper-scissor-top
-Assigne work from The Odin Project
+Assigned work from The Odin Project

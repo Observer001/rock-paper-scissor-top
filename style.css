@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid green;
+    padding: 10px;
+}
+
+#title,
+#input,
+.container,
+.lower {
+    margin: 10px;
+}
+
+table {
+    /* display: block; */
+    /* font-family: arial, sans-serif; */
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}

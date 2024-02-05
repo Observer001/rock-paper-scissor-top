@@ -8,20 +8,62 @@
     </head>
 
     <body>
-        <div>
-            First To Get N Points WINS!            
-        </div>
-        <div id="input">
-            <label for="item">Total Game Play:</label>
-            <input type="text" name="item" id="item">
-            <button id="total">Submit</button>
-        </div>
+        <div class="upper">
+            <div id="title">
+                First To Get N Points <b>WINS!</b>            
+            </div>
+            <div id="input">
+                <label for="item">Total Game Play:</label>
+                <input type="text" name="item" id="item" value="5">
+                <button id="total">Submit</button>
+            </div>
 
-        <div class="container">
-            <button class="card">rock</button>
-            <button class="card">paper</button>
-            <button class="card">scissor</button>
+            <div class="container">
+                <button class="card">rock</button>
+                <button class="card">paper</button>
+                <button class="card">scissor</button>
+            </div>
         </div>
+        
+        <!-- BELOW uses div to show content -->
+        <!-- <div id="main">
+            <div class="names">
+                <div>Player</div>
+                <div>Computer</div>
+            </div>
+            <div class="choices">
+                <div class="choice">Choice: </div>
+                <div class="player-choice">rock</div>
+                <div class="comp-choice">paper</div>
+            </div>
+            <div class="total-points">
+                <div class="points">Points: </div>
+                <div class="player-point">3</div>
+                <div class="comp-point">4</div>
+            </div>
+        </div> -->
+
+        <div class="lower">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Player</th>
+                    <th>Computer</th>
+                </tr>
+                <tr>
+                    <td>Choice</td>
+                    <td>Rock</td>
+                    <td>Paper</td>
+                </tr>
+                <tr>
+                    <td>Points</td>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>           
+            </table>
+        </div>
+        
+
 
     </body>
 

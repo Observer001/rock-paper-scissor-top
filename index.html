@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Rock-Paper-Scissor | TOP</title>
         <link rel="stylesheet" href="./style.css">
-        <script src="./script.js" defer></script>
+        <script src="./script.js" defer></script> 
     </head>
 
     <body>
@@ -13,7 +13,7 @@
                 First To Get N Points <b>WINS!</b>            
             </div>
             <div id="input">
-                <label for="item">Total Game Play:</label>
+                <label for="item">Final Points:</label>
                 <input type="text" name="item" id="item" value="5">
                 <button id="total">Submit</button>
             </div>
@@ -24,24 +24,6 @@
                 <button class="card">scissor</button>
             </div>
         </div>
-        
-        <!-- BELOW uses div to show content -->
-        <!-- <div id="main">
-            <div class="names">
-                <div>Player</div>
-                <div>Computer</div>
-            </div>
-            <div class="choices">
-                <div class="choice">Choice: </div>
-                <div class="player-choice">rock</div>
-                <div class="comp-choice">paper</div>
-            </div>
-            <div class="total-points">
-                <div class="points">Points: </div>
-                <div class="player-point">3</div>
-                <div class="comp-point">4</div>
-            </div>
-        </div> -->
 
         <div class="lower">
             <table>
@@ -52,13 +34,13 @@
                 </tr>
                 <tr>
                     <td>Choice</td>
-                    <td>Rock</td>
-                    <td>Paper</td>
+                    <td id="player-choice">blank</td>
+                    <td id="comp-choice">blank</td>
                 </tr>
                 <tr>
                     <td>Points</td>
-                    <td>3</td>
-                    <td>2</td>
+                    <td id="player-point">0</td>
+                    <td id="comp-point">0</td>
                 </tr>           
             </table>
         </div>
